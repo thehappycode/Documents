@@ -79,3 +79,12 @@ plantuml.1.2023.6.jar
 
 2. Dùng tổ hợp phím `Ctr + Atl + P`. Sau đó gõ `PlantUML: Export Current File Diagrams`
 3. Embed path image `![integratePlantuml](./assets/README/integratePlantuml.svg)`
+
+## Table
+
+STT | Họ và tên          | Giới tính
+----|--------------------|----------
+1   | Nguyễn Thanh Tâm   | Nam
+2   | Trần Thị Thu Trang | Nữ
+
+Bạn có thể cài thêm extension [Markdown Table Prettifier](https://marketplace.visualstudio.com/items?itemName=darkriszty.markdown-table-prettify) để format dễ dàng hơn.
