@@ -76,5 +76,6 @@ plantuml.1.2023.6.jar
 ```
 -->
 ![integratePlantuml](./assets/README/integratePlantuml.svg)
+
 2. Dùng tổ hợp phím `Ctr + Atl + P`. Sau đó gõ `PlantUML: Export Current File Diagrams`
 3. Embed path image `![integratePlantuml](./assets/README/integratePlantuml.svg)`
