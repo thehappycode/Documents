@@ -5,16 +5,16 @@ Serilog là thư viện của .NET cung cấp diagnostic logging to files, conso
 ## Serilog message templates
 
 Ví dụ về Serilog message templates
-> var position = new {Latitude = 25, Longitude = 123};
-> var elapsedMs = 34;
-> log.Information("Processed {@Position} in {Elaped:000} ms.", position, elapsedMs);
+
+    var position = new {Latitude = 25, Longitude = 123};
+    var elapsedMs = 34;
+    log.Information("Processed {@Position} in {Elaped:000} ms.", position, elapsedMs);
 
 - `@` trước Position nói cho Serilog là serialize object.
 - `:000` phía sau Elapsed là format string chuẩn của .NET với thuộc tính sau khi rendered.
 
 Kết quả nhận được khi hiển thị message trong logging như sau:
-
-    09:12:22 [Information] Processed {Latitude: 25, Longitude: 123} in 034 ms.
+> 09:12:22 [Information] Processed {Latitude: 25, Longitude: 123} in 034 ms.
 
 ---
 
@@ -56,11 +56,12 @@ Nhiều app lớn/phân tán cần hạn chế các level của logging. Mặc �
 ## Correlation
 
 `ForContext<T>()` tag log events ghi với class, other overloads `ForContext` cho phép log events có thể tagged với *identifier* hỗ trợ *correlation*.
-> var job = GetNextJob();
-> var jobLog = Log.ForContext("JobId", job.Id);
-> jobLog.Information("Running a new job");
-> job.Run();
-> jobLog.Information("Finished");
+
+    var job = GetNextJob();
+    var jobLog = Log.ForContext("JobId", job.Id);
+    jobLog.Information("Running a new job");
+    job.Run();
+    jobLog.Information("Finished");
 
 Đoạn code trên cả 2 log event sẽ mang theo ***JobI***.
 
