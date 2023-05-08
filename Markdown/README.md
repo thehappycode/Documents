@@ -69,13 +69,13 @@ plantuml.1.2023.6.jar
 1. Viết code diagram với syntax PlantUML
 <!--
 ```
-    @startuml integratePlantuml
+    @startuml IntegratePlantuml
         Alice -> Bob: Request
         Bob --_> Alice: Request
     @enduml
 ```
 -->
-![integratePlantuml](./assets/integratePlantuml.svg)
+![integratePlantuml](./assets/IntegratePlantuml.svg)
 
 2. Dùng tổ hợp phím `Ctr + Atl + P`. Sau đó gõ `PlantUML: Export Current File Diagrams`
 3. Embed path image `![integratePlantuml](./assets/README/integratePlantuml.svg)`
