@@ -124,4 +124,6 @@ Một lưu ý trong response của *refresh token* có một thuộc tính `refr
 - **Sesion idle**: 
 - **Refresh tokn leak detection**
 
+Một tiện ít khác của *refresh token* là application của bạn có thể update lại information về user từ *Keycloak* mà không cần phải *re-authenticate*.
+
 ### Updating the user profile
