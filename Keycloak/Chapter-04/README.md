@@ -127,3 +127,7 @@ Một lưu ý trong response của *refresh token* có một thuộc tính `refr
 Một tiện ít khác của *refresh token* là application của bạn có thể update lại information về user từ *Keycloak* mà không cần phải *re-authenticate*.
 
 ### Updating the user profile
+
+### Adding a custom property
+
+### Adding roles to the ID token
