@@ -6,7 +6,7 @@
 
 ## Keys
 
-`Keys` trong **StackExchange.Redis** có kiểu là `RedisKey`. `Keys` được có 2 dạng là `string` hoặc `byte[]`. `StringIncrement` là một phương thức của `RedisKey` *return* một giá trị *randowm*.
+`Keys` trong **StackExchange.Redis** có kiểu là `RedisKey`. `Keys` được có 2 dạng là `string` hoặc `byte[]`. `StringIncrement` là một phương thức của `RedisKey` *return* một giá trị *random*.
 
     string key = ...
     db.StringIncrement(key);
@@ -39,7 +39,7 @@ Lưu ý: Khi `get` `keys` không tồn tại thì `values` sẽ có giá trị l
 [Lua scripting in redis](https://redis.io/commands/EVAL) có 2 tính năng quan trọng
 
 - Input bắt buộc tách riêng `keys` và `values`.
-- Dữ liệu trả về cần cần phải định nghĩa.
+- Dữ liệu trả về không cần phải định nghĩa.
 
 Phương thức `ScriptEvaluate` cho phép tách biệt *hai array input*, một `RedisKey[]`, một `RedisValue[]`
 
