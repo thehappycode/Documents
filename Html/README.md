@@ -1,8 +1,42 @@
 # HTML Tutorial
 
-## HTML?
+## [Tài liệu tham khảo](https://www.w3schools.com/tags/default.asp)
 
-### [Tài liệu tham khảo](https://www.w3schools.com/tags/default.asp)
+## HTML là gì?
+
+HTML là một cụm từ được viết tắt *Hyper Text Markup Language* dịch ra là **Ngôn ngữ đánh dấu siêu văn bản** (nghe ngu vãi).
+HTML được dùng để tạo ra một trang Web.
+Một trang HTML được kết hợp từ nhiều phần tử thẻ (element tag). Mỗi thẻ sẽ nối cho browser biết cách hiển thị nội dung khác nhau.
+Để có thể hiểu rõ hơn thì ta có thể xem một trang web với một trang word chỉ khác là website có thêm phần URL? Vậy URL là gì? URL đại điện cho một địa chỉ server? Nếu thích thú thì bạn nên like và share hoặc comment chủ để URL để tôi làm một bài chi tiết về nó :)
+
+## Lịch sử HTML.
+
+HTML được một thanh niên tên người Anh tên là Tim Berners-Lee phát minh năm 1989.
+Trải qua bao nhiêu năm tháng thăng trầm biến động của lịch sử thì đến năm 2017 phiên bản cuối cùng là HTML5.2.
+
+## HTML hoạt động như thê nào?
+
+Thật sự thiếu sót nếu không nói về cách thức hoạt động của một trang Web.
+Website hoạt động bằng một giao thức (Prototol) gọi là (HTTP) giữa máy khách và máy chủ.
+Vậy giao thức (Protocal) là gì? Là một bộ các quy tắc cho phép các máy tính trao đổi thông tin với nhau nó tương tụ như ngôn ngữ để 2 người nói chuyện đc với nhau. Trong trường hợp HTTP là giao thức cho phép máy khách (client) và máy chủ (server). Éo hiểu mấy ông thời xưa dịch chữ server thành chủ đươc? :(((
+
+## Cấu trúc một trang HTML
+
+    <!DOCTYPE html>
+        <html>
+            <head>
+                <title>Page Title</title>
+            </head>
+            <body>
+                // Content
+                <h1>This is a heading <h1>
+                <p>This is a paragraph.</p>
+            </body>
+        </html>
+
+## Syntax
+
+    Như đã giới thiệu ở phần trên một trang HTML là sự kết hợp của nhiều phân tử thẻ (element tag). Quy tắc bắt buộc của một tag là nếu mở thẻ thì phải đóng thẻ trừ một thẻ đặc biệt như `<!DOCTYPE html>`
 
     <!DOCTYPE html>
     <html>
