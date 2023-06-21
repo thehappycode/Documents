@@ -22,22 +22,22 @@
 
 4. Create sentinel.conf file and provide master server details.
 
-    $ echo "sentinel monitor mymaster 172.18.0.2 6379 2" > /apps/redis/sentinel/sentinel_1/sentinel.conf
+    $ echo "sentinel monitor mymaster 172.18.0.2 6379 2" > /Users/thehappycode/apps/redis/sentinel/sentinel_1/sentinel.conf
 
-    $ echo "sentinel monitor mymaster 172.18.0.2 6379 2" > /apps/redis/sentinel/sentinel_2/sentinel.conf
+    $ echo "sentinel monitor mymaster 172.18.0.2 6379 2" > /Users/thehappycode/apps/redis/sentinel/sentinel_2/sentinel.conf
     
-    $ echo "sentinel monitor mymaster 172.18.0.2 6379 2" > /apps/redis/sentinel/sentinel_3/sentinel.conf
+    $ echo "sentinel monitor mymaster 172.18.0.2 6379 2" > /Users/thehappycode/apps/redis/sentinel/sentinel_3/sentinel.conf
 
     **Lưu ý**: `/apps/redis/sentinel/sentinel_1` là đường dẫn tuyệt đối của máy tính, như Mac `/Users/<user>/apps/redis/sentinel/sentinel_1`.
 
 
 5. Create three docker containers for Sentinels:
 
-    $ docker run -d --name redis-sentinel_1 -p 26379:26379 --network redis-net -v /apps/redis/sentinel/sentinel_1:/data redis redis-sentinel /data/sentinel.conf
+    $ docker run -d --name redis-sentinel_1 -p 26379:26379 --network redis-net -v /Users/thehappycode/apps/redis/sentinel/sentinel_1:/data redis redis-sentinel /data/sentinel.conf
 
-    $ docker run -d --name redis-sentinel_2 -p 26380:26379 --network redis-net -v /apps/redis/sentinel/sentinel_2:/data redis redis-sentinel /data/sentinel.conf
+    $ docker run -d --name redis-sentinel_2 -p 26380:26379 --network redis-net -v /Users/thehappycode/apps/redis/sentinel/sentinel_2:/data redis redis-sentinel /data/sentinel.conf
 
-    $ docker run -d --name redis-sentinel_3 -p 26381:26379 --network redis-net -v /apps/redis/sentinel/sentinel_3:/data redis redis-sentinel /data/sentinel.conf
+    $ docker run -d --name redis-sentinel_3 -p 26381:26379 --network redis-net -v /Users/thehappycode/apps/redis/sentinel/sentinel_3:/data redis redis-sentinel /data/sentinel.conf
 	
 6. Follow docker container logs to see if sentinel is running properly
     
